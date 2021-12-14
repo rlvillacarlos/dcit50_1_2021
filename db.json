@@ -1,9 +1,7 @@
 {
 "country":[{"id":1,"value":"Afghanistan"},{"id":2,"value":"Aland Islands"},{"id":3,"value":"Albania"},{"id":4,"value":"Algeria"},{"id":5,"value":"American Samoa"}],
 "animals":[{"id":245,"value":"aardvark"},{"id":246,"value":"antelope"},{"id":247,"value":"bass"},{"id":248,"value":"bear"},{"id":249,"value":"boar"}],
-"mythology":[{"id":345,"value":"Acestes"},{"id":346,"value":"Achilles"},{"id":347,"value":"Acis"},{"id":348,"value":"Acontius"},{"id":349,"value":"Actaeon"}],
 "fruits":[{"id":626,"value":"Alfalfa Sprouts"},{"id":627,"value":"Apple"},{"id":628,"value":"Apricot"},{"id":629,"value":"Artichoke"},{"id":630,"value":"Asian Pear"}],
-"elements":[{"id":760,"value":"Actinium"},{"id":761,"value":"Aluminium"},{"id":762,"value":"Americium"},{"id":763,"value":"Antimony"},{"id":764,"value":"Argon"}],
 "pokemon":[{"id":878,"value":"Abra"},{"id":879,"value":"Aerodactyl"},{"id":880,"value":"Alakazam"},{"id":881,"value":"Arbok"},{"id":882,"value":"Arcanine"}],
 "color":[{"id":1029,"value":"Red"},{"id":1030,"value":"Orange"},{"id":1031,"value":"Yellow"},{"id":1032,"value":"Green"},{"id":1033,"value":"Blue"}]
 }
