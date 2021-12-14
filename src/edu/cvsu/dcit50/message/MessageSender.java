@@ -25,35 +25,33 @@ public class MessageSender {
         int choice = in.nextInt();
         in.nextLine();
         
-        String content;
-        Message msg = null;
         switch(choice){
-            case 1 -> { 
-                msg = new TextMessage(sender, receiver);
+            case 1 -> { //Text Message
+                TextMessage txt = new TextMessage(sender, receiver);
                 System.out.print("Message: ");
-                content = in.nextLine();
-                msg.setContent(content);
+                txt.setContent(in.nextLine());
+                printMessageDetails(txt);
             }
-            case 2 -> { 
-                msg = new LinkMessage(sender, receiver);
+            case 2 -> { // Link Message
+                LinkMessage link = new LinkMessage(sender, receiver);
                 System.out.print("Link: ");
-                content = in.nextLine();
-                msg.setContent(content);
+                link.setContent(in.nextLine());
+                printMessageDetails(link);
             }
-            case 3 -> { 
-                msg = new ImageMessage(sender, receiver);
+            case 3 -> { //Image Message
+                ImageMessage img = new ImageMessage(sender, receiver);
                 System.out.print("Image Path: ");
-                content = in.nextLine();
-                msg.setContent(content);
+                img.setContent(in.nextLine());
+                printMessageDetails(img);
             }
         }
-        
-        if(msg != null){
-            System.out.println("--Message--");
-            System.out.printf("Sender: %s%n", sender);
-            System.out.printf("Receiver: %s%n", receiver);
-            System.out.printf("Message: %s%n", msg.getContentAsHTML());
-        }
+    }
+
+    static void printMessageDetails(Message msg){
+        System.out.println("--Message--");
+        System.out.printf("Sender: %s%n", msg.getSender());
+        System.out.printf("Receiver: %s%n", msg.getReceiver());
+        System.out.printf("Message: %s%n", msg.getContentAsHTML());
     }
     
     static void showMenu(){
