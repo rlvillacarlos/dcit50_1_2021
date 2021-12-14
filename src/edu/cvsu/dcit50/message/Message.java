@@ -24,6 +24,8 @@ public abstract class Message {
     
     public abstract boolean setContent(String content);
     
-    public abstract String getContentAsHTML();
+    public String getContentAsHTML(){
+        return "";
+    }
         
 }
